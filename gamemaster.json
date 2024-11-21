@@ -1,0 +1,12 @@
+{
+    "settings": {
+        "partySize": 3,
+        "maxBuffStages": 4,
+        "buffDivisor": 4,
+        "shadowAtkMult": 1.2,
+        "shadowDefMult": 0.833333331,
+        "strongMult": 1.6,
+        "weakMult": 0.625,
+        "immuneMult": 0.391
+    }
+}
