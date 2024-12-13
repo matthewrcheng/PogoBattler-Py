@@ -10,13 +10,14 @@ from pokemon import *
 
 if __name__ == "__main__":
     # testing
-    snarl = FastMove("Snarl", "Dark", 1, 10, 10)
-    dark_pulse = ChargedMove("Dark Pulse", "Dark", 3, 90, 50)
-    mandibuzz = Pokemon("Mandibuzz", "mandibuzz", False, 100, 100, 100, ["Dark", "Flying"], snarl, [dark_pulse])
+    snarl = FastMove("Snarl", "Dark", 1, 11, 13)
+    dark_pulse = ChargedMove("Dark Pulse", "Dark", 3, 80, 50)
+    aerial_ace = ChargedMove("Aerial Ace", "Flying", 3, 75, 50)
+    mandibuzz = Pokemon("Mandibuzz", "mandibuzz", False, 100, 100, 100, ["Dark", "Flying"], snarl, [dark_pulse, aerial_ace])
 
-    tackle = FastMove("Tackle", "Normal", 1, 5, 5)
+    tackle = FastMove("Tackle", "Normal", 0.5, 5, 5)
     string_shot = ChargedMove("String Shot", "Bug", 3, 30, 30)
-    caterpie = Pokemon("Caterpie", "caterpie", True, 40, 40, 40, ["Bug"], tackle, [string_shot])
+    caterpie = Pokemon("Caterpie", "caterpie", True, 40, 40, 400, ["Bug"], tackle, [string_shot])
  
 
     game_loop(mandibuzz, caterpie)
